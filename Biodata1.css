@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.jadwal {
+  display: grid;
+  grid-template-columns: repeat(3, 100px); /* Tiga kolom untuk Senin, Selasa, Rabu */
+  grid-template-rows: repeat(2, 100px); /* Dua baris untuk Senin-Sabtu dan Kamis-Sabtu */
+  gap: 5px; /* Jarak antar elemen */
+  background-color: white; /* Warna latar abu-abu */
+  padding: 10px;
+}
+
+.hari {
+  padding: 10px;
+  text-align: center;
+  background-color: gray; /* Warna latar abu-abu muda */
+}
+
+.kamis {
+  grid-row: 2; /* Kamis, Jumat, dan Sabtu berada di baris kedua */
+  grid-column: 1; /* Kamis, Jumat, dan Sabtu berada di kolom pertama */
+}
+
+/* Gaya tambahan untuk tampilan yang lebih baik */
+.jadwal {
+  max-width: 600px;
+  margin: 0 auto;
+}
